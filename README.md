@@ -1,21 +1,8 @@
-# Geometron 5
-
-Geometron 5 is a rewrite of geometron 4, streamlining and drastically enough changing things that I wanted a clean slate.
+# Map Factory 4
 
 
-Geometron 4 further unified the elements:
+Map Factory 4 eliminates geometron and strips down the system to just map and scroll.
 
-
-- symbol
-- scroll
-- map
-- propagator
-
-This system is self replicating. Test.
-
-## Here is the symbol for "scroll" in Geometron:
- 
-![](http://lafelabs.org/mapicons/scroll.svg) 
 
 
 ## Rules of Organic Media:
@@ -68,49 +55,5 @@ This system is self replicating. Test.
 - add link to editor, make editor dynamically update for whatever files are around, either html or in js or php, css
 
 
-### scroll.html
 
-- add no-update mode
-- add math mode
-- add conversion to standalone doc with hammer.js
-- add icons for modes instead of words
-- add copy remote scroll option
 
-### feed.html
-
-- add links
-- add text
-- add external feed import functionality, test input/output
-- add system for copy/paste of markdown code from here to drop into scroll in readme
-
-### symbol.html
-
-- dynamic x0 and y0, unit, put these into the glyph feed as an object
-- add svg functionality, export, save, etc
-- background image functionality(low priority)
-
-### hypercube.html
-
-- export images with glyph spelling 
-- export images with much more customization than symbol.html(ok to have it be complicated here, for expert users)
-- design overall window layout and functionality
-- easy import and export of fonts, shape tables, etc, sharing of all the parts
-- metalanguage for robotics functionality set up as simple template
-- control panel editor
-- keyboard editor
-- style editor
-- product properties: shape, format, x0,y0, unit
-- standard library of shapes and fonts:
-    - katakana dots font
-    - english dots font
-    - hebrew calligraphy font
-    - nautical signal flag font
-    - standard circuit diagrams
-    - quantum gates
-    - golden ratio sacred geometry
-    - yoga stuff
-    - watershed symbolism, language of Watershed
-    - street symbolism, language of Street
-    - factory symbolism, language of Factory
-
-is this a better way to edit?

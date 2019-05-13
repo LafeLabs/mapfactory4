@@ -40,20 +40,35 @@
         <img id = "branchdownbutton" class = "button" style = "width:50px;" src = "icons/branchdownicon.svg"/>
 
         <div id = "linkeditstuff">
-            <img id = "savebutton" src = "icons/savebutton.svg" class = "button" style = "width:50px"/>
-            <img id = "deletebutton" src = "icons/deletebutton.svg" class = "button" style = "width:50px"/>
-            <img id = "nextbutton" src = "icons/nextbutton.svg" class = "button" style = "width:50px"/>
-            <img id = "moveupbutton" src = "icons/moveupbutton.svg" class = "button" style = "width:50px"/>    
-            <img id = "newbutton" src = "icons/newbutton.svg" class = "button" style = "width:50px"/>
-            <img id = "prevbutton" src = "icons/prevbutton.svg" class = "button" style = "width:50px"/>
-            <img id = "movedownbutton" src = "icons/movedownbutton.svg" class = "button" style = "width:50px"/>
             <table id = "linkedittable">
-                <!--
-                table with: text, url, href, pulldown menu for type, x,y,angle,w,h,
-                -->
-                    <tr><td>text:</td><td><input id = "textinput"/></td></tr>
-                    <tr><td>src:</td><td><input id = "srcinput"/></td></tr>
-                    <tr><td>href:</td><td><input id = "hrefinput"/></td></tr>
+                <tr>
+                    <td>
+                        <img id = "prevbutton" src = "icons/prevbutton.svg" class = "button" style = "width:50px"/>
+                    </td>
+                    <td>
+                        <img id = "nextbutton" src = "icons/nextbutton.svg" class = "button" style = "width:50px"/>
+                    </td>
+                    <td>
+                        <img id = "movedownbutton" src = "icons/movedownbutton.svg" class = "button" style = "width:50px"/>
+                    </td>
+                    <td>
+                        <img id = "moveupbutton" src = "icons/moveupbutton.svg" class = "button" style = "width:50px"/>    
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img id = "savebutton" src = "icons/savebutton.svg" class = "button" style = "width:50px"/>
+                    </td>
+                    <td>
+                        <img id = "deletebutton" src = "icons/deletebutton.svg" class = "button" style = "width:50px"/>
+                    </td>
+                    <td>
+                        <img id = "newbutton" src = "icons/newbutton.svg" class = "button" style = "width:50px"/>                    
+                    </td>
+                </tr>
+                <tr><td>text:</td><td  colspan="3"><input id = "textinput"/></td></tr>
+                <tr><td>src:</td><td colspan="3"><input id = "srcinput"/></td></tr>
+                <tr><td>href:</td><td colspan="3"><input id = "hrefinput"/></td></tr>
             </table>
         </div>
 
@@ -98,15 +113,15 @@
                 </tr>
                 <tr>
                     <td>name:</td>
-                    <td><input id = "decknameinput"/></td>
+                    <td  colspan="3"><input id = "decknameinput"/></td>
                 </tr>
                 <tr>
                     <td>url:</td>
-                    <td><input id = "deckurlinput"/></td>
+                    <td  colspan="3"><input id = "deckurlinput"/></td>
                 </tr>
                 <tr>
                     <td>replicator:</td>
-                    <td><input id = "deckreplicatorinput"/></td>
+                    <td  colspan="3" style = "border:solid;"><input id = "deckreplicatorinput"/></td>
                 </tr>            
             </table>
                 
@@ -129,22 +144,39 @@
             </ul>
         </div>
         <div id = "rotatezoombox">
-
-            <img id = "zoomoutbutton" src= "icons/zoomouticon.svg" class = "button" style = "width:50px"/> 
-            <img id = "zoominbutton" src= "icons/zoominicon.svg" class = "button" style = "width:50px"/> 
-            <img id = "littlezoomoutbutton" src= "icons/littlezoomouticon.svg" class = "button" style = "width:50px"/> 
-            <img id = "littlezoominbutton" src= "icons/littlezoominicon.svg" class = "button" style = "width:50px"/> 
-            <img id = "rotateleftbutton" src= "icons/rotatelefticon.svg" class = "button" style = "width:50px"/> 
-            <img id = "rotaterightbutton" src= "icons/rotaterighticon.svg" class = "button" style = "width:50px"/> 
-            <img id = "littlerotateleftbutton" src= "icons/littlerotatelefticon.svg" class = "button" style = "width:50px"/> 
-            <img id = "littlerotaterightbutton" src= "icons/littlerotaterighticon.svg" class = "button" style = "width:50px"/> 
+            <table id = "rotatezoomtable">
+                <tr>
+                    <td>
+                        <img id = "zoomoutbutton" src= "icons/zoomouticon.svg" class = "button" /> 
+                    </td>
+                    <td>
+                        <img id = "littlezoomoutbutton" src= "icons/littlezoomouticon.svg" class = "button"/> 
+                    </td>
+                    <td>
+                        <img id = "littlezoominbutton" src= "icons/littlezoominicon.svg" class = "button" /> 
+                    </td>
+                    <td>
+                        <img id = "zoominbutton" src= "icons/zoominicon.svg" class = "button"/> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img id = "rotateleftbutton" src= "icons/rotatelefticon.svg" class = "button" /> 
+                    </td>
+                    <td>
+                        <img id = "littlerotateleftbutton" src= "icons/littlerotatelefticon.svg" class = "button"/> 
+                    </td>
+                    <td>
+                        <img id = "littlerotaterightbutton" src= "icons/littlerotaterighticon.svg" class = "button"/> 
+                    </td>
+                    <td>
+                        <img id = "rotaterightbutton" src= "icons/rotaterighticon.svg" class = "button" /> 
+                    </td>
+                </tr>
+            </table>
         
-            <div id = "scalebar">
-                <img src = "icons/scaleslider2.svg" id = "scalebarimage"/>
-            </div>
-            <div id = "rotatebar">
-                <img src = "icons/rotateslider2.svg" id = "rotatebarimage"/>
-            </div>
+                <img src = "icons/scaleslider2.svg" id = "scalebar"/>
+                <img src = "icons/rotateslider2.svg" id = "rotatebar"/>
 
         </div>
     </div>
@@ -347,27 +379,23 @@ document.getElementById("editmapbutton").onclick = function() {
     editMode = !editMode;
     if(editMode) {
         document.getElementById("hammerxy").style.display = "block";
-        document.getElementById("marginsquare2").style.display = "block";
         document.getElementById("linkedittable").style.display = "block";
-        document.getElementById("buttonrow1").style.display = "block";
-        document.getElementById("buttonrow2").style.display = "block";
         document.getElementById("feedscroll").style.display = "block";
         document.getElementById("branchscroll").style.display = "none";
         document.getElementById("deckscroll").style.display = "none";
         mainmap.linkArray[mainmap.linkindex].style.border = "solid";
         mainmap.linkArray[mainmap.linkindex].style.borderWidth = "0.1px";
+        document.getElementById("rotatezoombox").style.display = "block";
 
     }
     else {
         document.getElementById("hammerxy").style.display = "none";
-        document.getElementById("marginsquare2").style.display = "none";
         mainmap.linkArray[mainmap.linkindex].style.border = "none";
         document.getElementById("linkedittable").style.display = "none";
-        document.getElementById("buttonrow1").style.display = "none";
-        document.getElementById("buttonrow2").style.display = "none";
         document.getElementById("feedscroll").style.display = "none";
         document.getElementById("branchscroll").style.display = "block";
         document.getElementById("deckscroll").style.display = "block";
+        document.getElementById("rotatezoombox").style.display = "none";
 
     }
 
@@ -377,6 +405,7 @@ document.getElementById("editmapbutton").onclick = function() {
 document.getElementById("linkedittable").style.display = "none";
 document.getElementById("hammerxy").style.display = "none";
 document.getElementById("feedscroll").style.display = "none";
+document.getElementById("rotatezoombox").style.display = "none";
 document.getElementById("branchscroll").style.display = "block";
 
 document.getElementById("branchdownbutton").onclick = function() {
@@ -533,6 +562,7 @@ input,table,select{
     left:0px;
     top:0px;
     overflow:hidden;
+    border:solid;
 }
 #mainmap a{
     font-family:Helvetica;
@@ -547,7 +577,6 @@ input,table,select{
 }
 .button{
     cursor:pointer;
-    margin-bottom:1em;
 }
 .button:hover{
     background-color:#50ff50;
@@ -559,17 +588,16 @@ input,table,select{
     position:absolute;
     left:0px;
     right:0px;
-    top:0px;
-    bottom:50%;
+    bottom:25%;
+    height:25%;
     z-index:2;
     width:100%;
-
 }
 #rotatebar{
     position:absolute;
     left:0px;
     right:0px;    
-    height:50%;
+    height:25%;
     bottom:0px;
     z-index:20;
     width:100%;
@@ -579,7 +607,7 @@ input,table,select{
     left:0px;
     right:0px;
     top:0px;
-    bottom:0px;
+    height:100%;
     z-index:-2;
     width:100%;
 
@@ -647,7 +675,7 @@ input,table,select{
         position:absolute;
         left:0px;
         bottom:0px;
-        height:20em;
+        height:15em;
         overflow:hidden;
     }
     #box2{
@@ -655,7 +683,7 @@ input,table,select{
         position:absolute;
         left:33%;
         bottom:0px;
-        height:20em;
+        height:15em;
         overflow:hidden;
 
     }
@@ -664,7 +692,7 @@ input,table,select{
         position:absolute;
         right:0px;
         bottom:0px;
-        height:20em;
+        height:15em;
         overflow:hidden;
     }
 }
@@ -695,6 +723,25 @@ input,table,select{
         overflow:hidden;
         
     }
+}
+#rotatezoombox{
+    position:absolute;
+    left:0px;
+    right:0px;
+    top:0px;
+    bottom:0px;
+    overflow:hidden;
+    border:solid;
+}
+#rotatezoomtable tr{
+    width:80%;
+    margin:auto;
+}
+#rotatezoomtable td{
+    width:5%;
+}
+#rotatezoomtable img{
+    width:50%;
 }
 
 </style>

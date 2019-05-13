@@ -20,6 +20,10 @@
         "imagefeedicon.svg",
         "importicon.svg",
         "linkupicon.svg",
+        "littlerotatelefticon.svg",
+        "littlerotaterighticon.svg",
+        "littlezoominicon.svg",
+        "littlezoomouticon.svg",
         "mapicon2.svg",
         "movedownbutton.svg",
         "moveupbutton.svg",
@@ -28,6 +32,8 @@
         "nextbutton.svg",
         "prevbutton.svg",
         "readmeicon.svg",
+        "rotatelefticon.svg",
+        "rotaterighticon.svg",
         "rotateslider.svg",
         "rotateslider2.svg",
         "savebutton.svg",
@@ -36,7 +42,9 @@
         "scrollicon.svg",
         "symbolicon.svg",
         "textfeedicon.svg",
-        "uploadicon.svg"
+        "uploadicon.svg",
+        "zoominicon.svg",
+        "zoomouticon.svg"
     ],
     "data": [
         "currentMap.txt",
