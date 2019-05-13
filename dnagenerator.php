@@ -1,3 +1,5 @@
+<a href = "editor.php">editor.php</a>
+<br/>
 <pre>
 <?php
 
@@ -55,5 +57,3 @@
 
 ?>
 </pre>
-<br/>
-<a href = "editor.php">editor.php</a>

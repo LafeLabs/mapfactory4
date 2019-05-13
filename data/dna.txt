@@ -41,7 +41,6 @@
     "data": [
         "currentMap.txt",
         "deck.txt",
-        "dna.js",
         "dna.txt"
     ],
     "php": [
