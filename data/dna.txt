@@ -1,0 +1,62 @@
+{
+    "html": [
+        "README.md",
+        "index.html",
+        "scroll.html"
+    ],
+    "javascript": [
+        "mapfactory.js"
+    ],
+    "icons": [
+        "arrayicon.svg",
+        "branchdownicon.svg",
+        "closebutton.svg",
+        "createicon.svg",
+        "deletebutton.svg",
+        "editor.svg",
+        "feedicon.svg",
+        "helpicon.svg",
+        "hypercubeicon.svg",
+        "imagefeedicon.svg",
+        "importicon.svg",
+        "linkupicon.svg",
+        "mapicon2.svg",
+        "movedownbutton.svg",
+        "moveupbutton.svg",
+        "navigator.svg",
+        "newbutton.svg",
+        "nextbutton.svg",
+        "prevbutton.svg",
+        "readmeicon.svg",
+        "rotateslider.svg",
+        "rotateslider2.svg",
+        "savebutton.svg",
+        "scaleslider.svg",
+        "scaleslider2.svg",
+        "scrollicon.svg",
+        "symbolicon.svg",
+        "textfeedicon.svg",
+        "uploadicon.svg"
+    ],
+    "data": [
+        "currentMap.txt",
+        "deck.txt",
+        "dna.js",
+        "dna.txt"
+    ],
+    "php": [
+        "deckreplicator.txt",
+        "deletebranch.txt",
+        "deletefile.txt",
+        "dir.txt",
+        "dnagenerator.txt",
+        "editor.txt",
+        "fileloader.txt",
+        "filesaver.txt",
+        "metareplicator.txt",
+        "newbranch.txt",
+        "replicator.txt",
+        "text2php.txt",
+        "upload.txt"
+    ]
+}
