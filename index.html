@@ -328,36 +328,45 @@ mczoom.on("panleft panright panup pandown tap press", function(ev) {
 
 document.getElementById("zoomoutbutton").onclick = function() {
     mainmap.array[mainmap.linkindex].w /= 1.25;
-    mainmap.draw();
+    mainmap.linkArray[mainmap.linkindex].style.width = (Math.abs(mainmap.array[mainmap.linkindex].w*mainmap.w)).toString() +  "px";
+    mainmap.linkArray[mainmap.linkindex].style.fontSize = (0.1*Math.abs(mainmap.array[mainmap.linkindex].w*mainmap.w)).toString() + "px"; 
+
 }
 document.getElementById("zoominbutton").onclick = function() {
     mainmap.array[mainmap.linkindex].w *= 1.25;
-    mainmap.draw();
+    mainmap.linkArray[mainmap.linkindex].style.width = (Math.abs(mainmap.array[mainmap.linkindex].w*mainmap.w)).toString() +  "px";
+    mainmap.linkArray[mainmap.linkindex].style.fontSize = (0.1*Math.abs(mainmap.array[mainmap.linkindex].w*mainmap.w)).toString() + "px"; 
+
 }
 document.getElementById("littlezoomoutbutton").onclick = function() {
     mainmap.array[mainmap.linkindex].w /= 1.01;
-    mainmap.draw();
+    mainmap.linkArray[mainmap.linkindex].style.width = (Math.abs(mainmap.array[mainmap.linkindex].w*mainmap.w)).toString() +  "px";
+    mainmap.linkArray[mainmap.linkindex].style.fontSize = (0.1*Math.abs(mainmap.array[mainmap.linkindex].w*mainmap.w)).toString() + "px"; 
+
 }
 document.getElementById("littlezoominbutton").onclick = function() {
     mainmap.array[mainmap.linkindex].w *= 1.01;
-    mainmap.draw();
+    mainmap.linkArray[mainmap.linkindex].style.width = (Math.abs(mainmap.array[mainmap.linkindex].w*mainmap.w)).toString() +  "px";
+    mainmap.linkArray[mainmap.linkindex].style.fontSize = (0.1*Math.abs(mainmap.array[mainmap.linkindex].w*mainmap.w)).toString() + "px"; 
+
 }
 
 document.getElementById("rotateleftbutton").onclick = function() {
     mainmap.array[mainmap.linkindex].angle -= 5;
-    mainmap.draw();
+    mainmap.linkArray[mainmap.linkindex].style.transform = "rotate(" + (mainmap.array[mainmap.linkindex].angle).toString() + "deg)";
+
 }
 document.getElementById("rotaterightbutton").onclick = function() {
     mainmap.array[mainmap.linkindex].angle += 5;
-    mainmap.draw();
+    mainmap.linkArray[mainmap.linkindex].style.transform = "rotate(" + (mainmap.array[mainmap.linkindex].angle).toString() + "deg)";
 }
 document.getElementById("littlerotateleftbutton").onclick = function() {
     mainmap.array[mainmap.linkindex].angle -= 0.5;
-    mainmap.draw();
+    mainmap.linkArray[mainmap.linkindex].style.transform = "rotate(" + (mainmap.array[mainmap.linkindex].angle).toString() + "deg)";
 }
 document.getElementById("littlerotaterightbutton").onclick = function() {
     mainmap.array[mainmap.linkindex].angle += 0.5;
-    mainmap.draw();
+    mainmap.linkArray[mainmap.linkindex].style.transform = "rotate(" + (mainmap.array[mainmap.linkindex].angle).toString() + "deg)";
 }
 
 
@@ -562,7 +571,6 @@ input,table,select{
     left:0px;
     top:0px;
     overflow:hidden;
-    border:solid;
 }
 #mainmap a{
     font-family:Helvetica;
@@ -695,6 +703,10 @@ input,table,select{
         height:15em;
         overflow:hidden;
     }
+    #mainmap{
+        border-bottom:solid;
+        border-width:0.1px;
+    }
 }
 @media only screen and (orientation: landscape) {
     #box1{
@@ -723,6 +735,11 @@ input,table,select{
         overflow:hidden;
         
     }
+    #mainmap{
+        border-right:solid;
+        border-width:0.1px;
+    }
+
 }
 #rotatezoombox{
     position:absolute;
