@@ -9,8 +9,7 @@ $iconfiles = scandir(getcwd()."/".$branchname."/icons");
 $phpfiles = scandir(getcwd()."/".$branchname."/php");
 $datafiles = scandir(getcwd()."/".$branchname."/data");
 $uploadfiles = scandir(getcwd()."/".$branchname."/uploadimages");
-$symbolfiles = scandir(getcwd()."/".$branchname."/symbolfeed");
-$cssfiles = scandir(getcwd()."/".$branchname."/css");
+$symbolfiles = scandir(getcwd()."/".$branchname."/symbols");
 
 
 foreach($jsfiles as $value){
@@ -39,14 +38,10 @@ foreach($uploadfiles as $value){
 rmdir($branchname."/uploadimages");
 
 foreach($symbolfiles as $value){
-    unlink($branchname."/symbolfeed/".$value);
+    unlink($branchname."/symbols/".$value);
 }
-rmdir($branchname."/symbolfeed");
+rmdir($branchname."/symbols");
 
-foreach($cssfiles as $value){
-    unlink($branchname."/css/".$value);
-}
-rmdir($branchname."/css");
 
 
 foreach($files as $value){

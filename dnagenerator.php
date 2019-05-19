@@ -8,6 +8,7 @@
     $iconfiles = scandir(getcwd()."/icons");
     $phpfiles = scandir(getcwd()."/php");
     $datafiles = scandir(getcwd()."/data");
+    $symbolfiles = scandir(getcwd()."/symbols");
 
     $htmlfiles = [];
     foreach($files as $value){
@@ -32,6 +33,14 @@
             array_push($dna->icons,$value);
         }
     }
+
+    $dna->symbols = [];
+    foreach($symbolfiles as $value){
+        if($value{0} != "."){
+            array_push($dna->symbols,$value);
+        }
+    }
+
 
     $dna->data = [];
     foreach($datafiles as $value){

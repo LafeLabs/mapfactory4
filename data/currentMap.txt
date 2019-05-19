@@ -20,14 +20,14 @@
         "src": ""
     },
     {
-        "x": 0.13961813842482101,
-        "y": 0.6217183770883055,
+        "x": 0.19809069212410502,
+        "y": 0.5966587112171837,
         "w": 0.09904534606205251,
         "h": 1,
         "angle": 302,
         "text": "",
         "href": "index.html",
-        "src": "http://www.cherrytreemaryland.xyz/symbol/svg/svg1556330629.svg"
+        "src": "http://localhost:8000/symbols/shortarrow.svg"
     },
     {
         "x": 0.7088305489260143,

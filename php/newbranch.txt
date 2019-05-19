@@ -6,14 +6,15 @@ mkdir($branchname."/jscode");
 mkdir($branchname."/icons");
 mkdir($branchname."/data");
 mkdir($branchname."/php");
-mkdir($branchname."/symbolfeed");
 mkdir($branchname."/uploadimages");
+mkdir($branchname."/symbols");
 
 $files = scandir(getcwd());
 $jsfiles = scandir(getcwd()."/jscode");
 $iconfiles = scandir(getcwd()."/icons");
 $phpfiles = scandir(getcwd()."/php");
 $datafiles = scandir(getcwd()."/data");
+$symbolfiles = scandir(getcwd()."/symbols");
 
 $htmlfiles = [];
 foreach($files as $value){
@@ -35,6 +36,12 @@ foreach($jsfiles as $value){
 foreach($iconfiles as $value){
     if($value{0} != "."){
         copy("icons/".$value,$branchname."/icons/".$value);
+    }
+}
+
+foreach($symbolfiles as $value){
+    if($value{0} != "."){
+        copy("symbols/".$value,$branchname."/symbols/".$value);
     }
 }
 

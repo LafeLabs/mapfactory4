@@ -46,6 +46,12 @@
         "zoominicon.svg",
         "zoomouticon.svg"
     ],
+    "symbols": [
+        "circle.svg",
+        "longarrow.svg",
+        "longthinarrow.svg",
+        "shortarrow.svg"
+    ],
     "data": [
         "currentMap.txt",
         "deck.txt",

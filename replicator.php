@@ -11,6 +11,7 @@ mkdir("icons");
 mkdir("data");
 mkdir("php");
 mkdir("uploadimages");
+mkdir("symbols");
 
 
 foreach($dna->html as $value){
@@ -24,6 +25,11 @@ foreach($dna->javascript as $value){
 foreach($dna->icons as $value){
     copy($baseurl."icons/".$value,"icons/".$value);
 }
+
+foreach($dna->symbols as $value){
+    copy($baseurl."symbols/".$value,"symbols/".$value);
+}
+
 
 foreach($dna->data as $value){
     copy($baseurl."data/".$value,"data/".$value);
