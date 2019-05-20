@@ -1,6 +1,7 @@
 {
     "html": [
         "README.md",
+        "frozen.html",
         "index.html",
         "scroll.html"
     ],
@@ -15,6 +16,7 @@
         "deletebutton.svg",
         "editor.svg",
         "feedicon.svg",
+        "freezeicon.svg",
         "helpicon.svg",
         "hypercubeicon.svg",
         "imagefeedicon.svg",
