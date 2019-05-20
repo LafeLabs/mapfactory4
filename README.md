@@ -1,59 +1,16 @@
 # Map Factory 4
 
-
-Map Factory 4 eliminates geometron and strips down the system to just map and scroll.
-
-
+The Map Factory is a system for building web pages that are "maps" in a general sense: a two dimensional arrangement of images, words, and links.  It is "organic media", or media which behaves like a living thing, and in concert with living things(us, the users).
 
 ## Rules of Organic Media:
 
 - everything replicates
 - everything is editable
-- everthing can get deleted
+- everything can get deleted(to save a thing, save a local backup or put it on a permanent text file archive like pastebin or github)
 - next instance needs only the previous instance, no central code base referenced at all, same for subsequent instance
-
-## To Do:
-
-### Immediate, top priority:
-
-- replicator.php, use to put on a remote server from github code, then replicate from new server to new one after that(make it living organic thing)
-- deletebranch added so a branchdown can be undone
-- design layout of hypercube.html(on paper)
-- make it easy to export urls from feed to import into index.html 
-- make index.html have nav as default
-- fix layout, convert to css, to make it dynamic and work with mobile, same for all pages(web design) 
-
-### Top Level/System
-
-- branch down further tested
-- add deletebranch
-- replicator.php working, used to replicate to servers
-- build a better CSS framework for the overall shape of the screens, make it dynamic so resize doesn't break everything
-- add and test mobile functionality for all pages(portrait instead of landscape)
-- try building out a universe of things: cherry tree shopping center for instance
-- write the physical Book of Geometron, build a Universe of Things around it
-- build a Universe of Things around ArtBox
-- build a Universe of things with markers/maps/signs in physical locations as prototype
-- build protocol for replicating a whole Universe
-- plot out the path to build rapdily replicating post capitalist technology with this: build a factory in a location in space defined by a street and watershed, work in a locally defined Trash Camp, build/make/create, create economic activity in capitalist system which generates money locally but globally creates self replicating things which can expand across the system.  *Locally* people in Capitalism are drawn into our system by the profit motive, but globally our system totally undermines capitalism by releasing things for free which repilcate without money.
-- add codemap.html, a MAP object which has links to editor.php?filename=[this file] for each file in the system, showing how they all go together
-- add propagator.html which is a scroll that tells the user how to propagate the System using:
-    - hostinger with paid hosting and a new domain, which can generate email addresses which are used to get..
-    - 000webhost free hosting
-    - raspberry pi zero w based local server on a local wifi
-    - MAMP localhost 
-    - php localhost
-
-
-### index.html
-
-- put nav on top instead of array display
-- map import from remote
-- JSON string import/export
-- make text elements actually scale properly in some rational way with fontSize
-- fix hammer on vertical sliders on work computer
-- add link to editor, make editor dynamically update for whatever files are around, either html or in js or php, css
-
-
-
-
+- there are no passwords or logins, all pages are totally open
+- sites tend to be anchored in real physical places, like a shopping center, public library, neighborhood, park, church, stream/river/creek, intersection, highway rest stop, community center, etc.  
+- this is based on an idea of a "universe of things", where things are considered in the most general sense possible: places, ideas, objects, actions, subjects, etc.  
+- By building a language for building up online representations of "things" in the broad philosophical sense which can self replicate there is the potential to build a vastly larger universe of online information than exists in the current Internet, in a totally decentralized way
+- this is not a company, not a non profit, not a centralized thing.  When it is copied, the next instance is not at a lower or higher level in any hierarchy than the previous one.  
+- for those interested in the technical side, this is as front end as possible, just javascript, html, and a very small amount of php for the sole purpose of accessing the local file system.  No SQL servers or other databases are used ever.  Nothing should ever be installed via a command line or other professional tools: installation is simply by copying a single replicator.php script and running it, which can be run from a browser without any server side access at all  if you want a free tour of the code and a lesson in how to improve on it and use it for your own purposes email lafelabs@gmail.com
