@@ -1,20 +1,5 @@
 <?php
 
-/*
-unfreeze.php:
-
-make it so this branch can get deleted again
-
-run text2php.php 
-
-remove the json data from index.html so that it doesn't get used
-
-turn back on all the php calling functions from index.html 
-
-add back all the edit functions, buttons etc.
-
-remove  button to un-freeeze
-
-*/
+copy("unfrozen.html","index.html");
 
 ?>

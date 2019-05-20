@@ -1,20 +1,16 @@
 <?php
 
-/*
-freeze.php:
+$currentmap = file_get_contents("data/currentMap.txt");
+$frozen = file_get_contents("frozen.html");
 
-make it so this branch does not get deleted
+copy("index.html","unfrozen.html");
 
-remove all php other than one script to bring it all back to life(text2php.php and some other sript to unfreeze)
+$frozentop = explode("<!--<datadiv>-->",$frozen)[0];
+$frozenbottom = explode("<!--</datadiv>-->",$frozen)[1];
 
-put the json data into index.html so that it can be accessed with no php whatsoever
+$indexout = $frozentop."\n<div id = \"datadiv\" style = \"display:none\">\n".$currentmap."\n</div>\n".$frozenbottom;
 
-remove all the php calling functions from index.html so they don't even try to run
+file_put_contents("index.html",$indexout);
 
-remove all the edit functions, buttons etc, so you can't get into a non-working edit mode
-
-add a easy and simple button to un-freeeze
-
-*/
 
 ?>

@@ -26,7 +26,7 @@
 </script>
 </head>
 <body>    
-
+<!--<datadiv/>-->
     <div id = "mainmap"></div>
     <div id = "hammerxy">
         <!--this covers the map exactly, sits at higher z index, and is turned off when NOT editing xy-->
@@ -421,6 +421,9 @@ document.getElementById("branchdownbutton").onclick = function() {
     document.getElementById("branchnametable").style.display = "block";
 }
 
+// begin stuff that we don't need if we're not editing things
+
+
 var httpc = new XMLHttpRequest();
 httpc.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -454,7 +457,6 @@ httpc.onreadystatechange = function() {
 
 httpc.open("GET","dir.php?type=dir", true);
 httpc.send();//send text to newbranch.php
-
 
 document.getElementById("branchnameinput").onchange = function() {
 
@@ -582,6 +584,7 @@ var httpc3 = new XMLHttpRequest();
 httpc3.open("GET", "fileloader.php?filename=data/deck.txt", true);
 httpc3.send();
 
+// end stuff that we don't need if we're not editing things
 
 </script>
 <style>

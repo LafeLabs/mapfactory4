@@ -31,6 +31,7 @@ EGO DEATH:
 <div id = "filescroll">
 
     <div class = "html file">index.html</div>
+    <div class = "html file">frozen.html</div>
     <div class = "html file">scroll.html</div>
 
     <div class = "markdown file">README.md</div>
