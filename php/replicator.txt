@@ -32,7 +32,9 @@ foreach($dna->symbols as $value){
 
 
 foreach($dna->data as $value){
+    
     copy($baseurl."data/".$value,"data/".$value);
+    
 }
 
 foreach($dna->php as $value){

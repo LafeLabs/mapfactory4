@@ -587,6 +587,15 @@ httpc3.send();
 
 // end stuff that we don't need if we're not editing things
 
+document.getElementById("freezebutton").onclick = function() {
+
+    var httpcfreeze = new XMLHttpRequest();
+    httpcfreeze.open("GET", "freeze.php", true);
+    httpcfreeze.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    httpcfreeze.send();
+    location.reload();
+}
+
 </script>
 <style>
 body{
