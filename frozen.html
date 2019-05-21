@@ -27,84 +27,30 @@
 <body>    
 <!--<datadiv>-->
 <div id = "datadiv" style = "display:none">
-    [
-    {
-        "x": 0.027446300715990454,
-        "y": 0.03699284009546539,
-        "w": 0.9534606205250596,
-        "angle": 0,
-        "text": "",
-        "href": "",
-        "src": "http://geometron.000webhostapp.com/uploadimages/image27.jpg"
-    },
-    {
-        "x": 0.3269689737470167,
-        "y": 0.20763723150357996,
-        "w": 0.2159904534606205,
-        "angle": 41,
-        "text": "editor.php",
-        "href": "editor.php",
-        "src": ""
-    },
-    {
-        "x": 0.19809069212410502,
-        "y": 0.5966587112171837,
-        "w": 0.09904534606205251,
-        "angle": 302,
-        "text": "",
-        "href": "index.html",
-        "src": "http://localhost:8000/symbols/shortarrow.svg"
-    },
-    {
-        "x": 0.7088305489260143,
-        "y": 0.6873508353221957,
-        "w": 0.06324582338902147,
-        "angle": 0,
-        "text": "",
-        "href": "",
-        "src": "icons/feedicon.svg"
-    },
-    {
-        "x": 0.5548926014319809,
-        "y": 0.4379474940334129,
-        "w": 0.4498806682577566,
-        "angle": 0,
-        "text": "",
-        "href": "",
-        "src": "icons/symbolicon.svg"
-    },
-    {
-        "x": 0.5608591885441527,
-        "y": 0.06443914081145585,
-        "w": 0.3353221957040573,
-        "angle": 0,
-        "text": "",
-        "href": "scroll.html",
-        "src": "icons/scrollicon.svg"
-    },
-    {
-        "x": 0.13126491646778043,
-        "y": 0.5739856801909308,
-        "w": 0.13484486873508353,
-        "angle": 33,
-        "text": "bar",
-        "href": "",
-        "src": ""
-    },
+[
     {
         "x": 0.17780429594272076,
         "y": 0.5799522673031027,
-        "w": 0.13484486873508353,
-        "angle": 33,
-        "text": "foo",
-        "href": "",
+        "w": 0.5119331742243437,
+        "angle": 0,
+        "text": "Read about this",
+        "href": "scroll.html",
+        "src": ""
+    },
+    {
+        "x": 0.06921241050119331,
+        "y": 0.10739856801909307,
+        "w": 0.2064439140811456,
+        "angle": 0,
+        "text": "code editor",
+        "href": "editor.php",
         "src": ""
     }
 ]
 </div>
 <!--</datadiv>-->
 <div id = "mainmap"></div>
- 
+
 <script>
 
 landscape = false;
@@ -126,6 +72,17 @@ mainmap = new Map(squareWidth,squareWidth,document.getElementById("mainmap"));
 
 mainmap.array = JSON.parse(document.getElementById("datadiv").innerHTML);
 mainmap.draw();
+
+
+document.getElementById("unfreezebutton").onclick = function() {
+
+    var httpcfreeze = new XMLHttpRequest();
+    httpcfreeze.open("GET", "freeze.php", true);
+    httpcfreeze.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    httpcfreeze.send();
+    location.reload();
+
+}
 
 </script>
 <style>

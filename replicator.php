@@ -13,6 +13,17 @@ mkdir("php");
 mkdir("uploadimages");
 mkdir("symbols");
 
+$oldmapexists = false;
+if(file_exists("data/currentMap.txt")){
+    $currentMap = file_get_contents("data/currentMap.txt");
+    $oldmapexists = true;
+}
+
+$oldscrollexists = false;
+if(file_exists("README.md")){
+    $README = file_get_contents("README.md");
+    $oldscrollexists = true;
+}
 
 foreach($dna->html as $value){
     copy($baseurl.$value,$value);
@@ -32,12 +43,22 @@ foreach($dna->symbols as $value){
 
 
 foreach($dna->data as $value){
+    
     copy($baseurl."data/".$value,"data/".$value);
+    
 }
 
 foreach($dna->php as $value){
     copy($baseurl."php/".$value,"php/".$value);
     copy($baseurl."php/".$value,explode(".",$value)[0].".php");
+}
+
+if($oldmapexists){
+    file_put_contents("data/currentMap.txt",$currentMap);
+}
+
+if($oldscrollexists){
+    file_put_contents("README.md",$README);
 }
 
 ?>
